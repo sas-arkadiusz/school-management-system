@@ -14,5 +14,10 @@ This project is created with:
 * PostgreSQL
 * JDBC 4.2
 
+Diagrams are created in:
+* UML Notation
+* Chen's Notation
+* Barker's Notation
+
 ## Setup
 Work in progress.
