@@ -11,7 +11,7 @@ This repository contains school database and an application to manage the databa
 ## Technologies
 This project is created with:
 * Java SE 8
-* PostgreSQL
+* PostgreSQL 10
 * JDBC 4.2
 
 Diagrams are created in:
