@@ -20,3 +20,23 @@ INSERT INTO "STUDENT_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "STUDENT_
 --- STUDENT_ID (FK) IS NOT NULL ---> BIGINT
 
 <-------------------------------------------------------------------------------------------------------->
+
+TO 'CHARGE':
+insert into "CHARGE" ("CHARGE_ID", "AMOUNT_WITHOUT_INTEREST", "INTEREST", "PAYMENT_DATE", "DESCRIPTION", "STUDENT_ID") values [...]
+--- CHARGE_ID (PK) IS NOT NULL ---> BIGINT
+--- AMOUNT_WITHOUT_INTEREST IS NOT NULL ---> BIGINT
+--- INSTEREST IS NOT NULL ---> BIGINT
+--- PAYMENT_DATE IS NOT NULL ---> DATE
+--- DESRIPTION IS NOT NULL ---> TEXT
+--- STUDNET_ID (FK) IS NOT NULL ---> BIGINT
+
+<-------------------------------------------------------------------------------------------------------->
+
+TO 'CLASSROOM':
+
+INSERT INTO "CLASSROOM" ("CLASSROOM_ID", "COMPLEX") values [...]
+--- CLASSROOM (PK) IS NOT NULL ---> BIGINT
+--- COMPLEX IS NOT NULL ---> BIGINT
+
+<-------------------------------------------------------------------------------------------------------->
+

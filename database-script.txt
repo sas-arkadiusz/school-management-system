@@ -17,16 +17,16 @@ $$
 declare numrows integer;
 begin
   select count(*) into numrows
-  from ADMINISTRATION
-  where EMPLOYEE_ID = new.EMPLOYEE_ID;
+  from "ADMINISTRATION"
+  where "EMPLOYEE_ID" = new."EMPLOYEE_ID";
   if (numrows > 0) then
-    raise exception 'Exclusive Inheritance violation with table ADMINISTRATION. Cannot insert.';
+    raise exception 'Exclusive Inheritance violation with table "ADMINISTRATION". Cannot insert.';
   end if;
   select count(*) into numrows
-  from MAINTENANCE
-  where EMPLOYEE_ID = new.EMPLOYEE_ID;
+  from "MAINTENANCE"
+  where "EMPLOYEE_ID" = new."EMPLOYEE_ID";
   if (numrows > 0) then
-    raise exception 'Exclusive Inheritance violation with table MAINTENANCE. Cannot insert.';
+    raise exception 'Exclusive Inheritance violation with table "MAINTENANCE". Cannot insert.';
   end if;
 return new;
 end;
@@ -42,16 +42,16 @@ $$
 declare numrows integer;
 begin
   select count(*) into numrows
-  from MAINTENANCE
-  where EMPLOYEE_ID = new.EMPLOYEE_ID;
+  from "MAINTENANCE"
+  where "EMPLOYEE_ID" = new."EMPLOYEE_ID";
   if (numrows > 0) then
-    raise exception 'Exclusive Inheritance violation with table MAINTENANCE. Cannot insert.';
+    raise exception 'Exclusive Inheritance violation with table "MAINTENANCE". Cannot insert.';
   end if;
   select count(*) into numrows
-  from TEACHER
-  where EMPLOYEE_ID = new.EMPLOYEE_ID;
+  from "TEACHER"
+  where "EMPLOYEE_ID" = new."EMPLOYEE_ID";
   if (numrows > 0) then
-    raise exception 'Exclusive Inheritance violation with table TEACHER. Cannot insert.';
+    raise exception 'Exclusive Inheritance violation with table "TEACHER". Cannot insert.';
   end if;
 return new;
 end;
@@ -67,16 +67,16 @@ $$
 declare numrows integer;
 begin
   select count(*) into numrows
-  from ADMINISTRATION
-  where EMPLOYEE_ID = new.EMPLOYEE_ID;
+  from "ADMINISTRATION"
+  where "EMPLOYEE_ID" = new."EMPLOYEE_ID";
   if (numrows > 0) then
-    raise exception 'Exclusive Inheritance violation with table ADMINISTRATION. Cannot insert.';
+    raise exception 'Exclusive Inheritance violation with table "ADMINISTRATION". Cannot insert.';
   end if;
   select count(*) into numrows
-  from TEACHER
-  where EMPLOYEE_ID = new.EMPLOYEE_ID;
+  from "TEACHER"
+  where "EMPLOYEE_ID" = new."EMPLOYEE_ID";
   if (numrows > 0) then
-    raise exception 'Exclusive Inheritance violation with table TEACHER. Cannot insert.';
+    raise exception 'Exclusive Inheritance violation with table "TEACHER". Cannot insert.';
   end if;
 return new;
 end;
@@ -337,7 +337,8 @@ ALTER TABLE "SUBJECT" ADD CONSTRAINT "Unique_Identifier12" PRIMARY KEY ("SUBJECT
 
 CREATE TABLE "STUDENT_SUBJECT"(
  "STUDENT_ID" Bigint NOT NULL,
- "SUBJECT_ID" Bigint NOT NULL
+ "SUBJECT_ID" Bigint NOT NULL,
+ "FINAL_ASSESSMENT" Bigint
 )
 WITH (
  autovacuum_enabled=true)
