@@ -1,0 +1,22 @@
+TO 'STUDENT':
+
+INSERT INTO "STUDENT" ("STUDENT_ID", "SURNAME", "NAME", "DATE_OF_BIRTH", "FORM", "STIPEND") values [...]
+--- STUDENT ID (PK) IS NOT NULL ---> BIGINT
+--- SURNAME IS NOT NULL ---> TEXT
+--- NAME IS NOT NULL ---> TEST
+--- DATE_OF_BIRTH IS NOT NULL ---> DATE
+--- FORM IS NOT NULL ---> TEXT
+--- STIPEND ---> BOOLEAN
+
+<-------------------------------------------------------------------------------------------------------->
+
+TO 'STUDENT_ADDRESS':
+
+INSERT INTO "STUDENT_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "STUDENT_ID") VALUES [...]
+--- LOCALITY IS NOT NULL ---> TEXT
+--- POSTCODE IS NOT NULL ---> TEXT
+--- STREET IS NOT NULL ---> TEXT
+--- NO IS NOT NULL ---> TEXT
+--- STUDENT_ID (FK) IS NOT NULL ---> BIGINT
+
+<-------------------------------------------------------------------------------------------------------->
