@@ -635,3 +635,139 @@ INSERT INTO "TEACHER_TRAINING" ("TRAINING_NAME", "EMPLOYEE_ID") values (
 
 INSERT INTO "TEACHER_TRAINING"  ("TRAINING_NAME", "EMPLOYEE_ID") values (
 'meditating course', 14);
+
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Jamaica, NY', '11434', 'Heritage Drive', '830', 1);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Brooklyn, NY', '11211', 'South Queen Street', '9803', 2);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Buffalo, NY', '14224', 'Piper Street', '85', 3);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Brooklyn, NY', '11230', 'Prospect Ave.', '305', 4);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Auburn, NY', '13021', 'NW. Carpenter Drive', '9150', 5);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Bronx, NY', '10457', 'Lees Creek St.', '996', 6);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Levittown, NY', '11756', 'Carson St.', '8187', 7);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Huntington, NY', '11743', 'Miller Dr.', '9163', 8);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Brooklyn, NY', '11208', 'Sunset St.', '178', 9);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Brooklyn, NY', '11225', 'Beach Street', '90', 10);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'New York, NY', '10027', 'Bear Hill Drive', '712', 11);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'New York, NY', '10009', 'Leatherwood Ave.', '760', 12);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Bronx, NY', '10468', 'Leatherwood St.', '570', 13);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Tonawanda, NY', '14150', 'St Paul Dr.', '8161', 14);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Brooklyn, NY', '11228', 'Sherman Street', '54', 15);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'New York, NY', '10032', 'Valley View Street', '9486', 16);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Bronx, NY', '10453', 'Shirley St.', '9', 17);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Jackson Heights, NY', '11372', 'Academy St.', '28', 18);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Brooklyn, NY', '11233', 'East Gates Dr.', '73', 19);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Westbury, NY', '11590', 'N. Augusta Street', '85', 20);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'New York, NY', '10016', 'Cambridge Road', '922', 21);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Brentwood, NY', '11717', 'Locust St.', '811', 22);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'East Elmhurst, NY', '11370', 'Manhattan Street', '108', 23);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Fresh Meadwos, NY', '11365', 'Ann Lane', '7239', 24);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Brooklyn, NY', '11209', 'Glendale Ave.', '39', 25);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Lockport, NY', '14094', 'Applegate St.', '39', 26);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Fresh Meadows, NY', '11365', 'Cactus Ave.', '7427', 27);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Jamestown, NY', '14701', 'Bayport Street', '704 NW.', 28);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Jamaica, NY', '11434', 'Garfield Rd.', '884', 29);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Buffalo, NY', '14215', 'Foster Court', '9700', 30);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'New York, NY', '10027', 'Fieldstone Dr.', '947', 31);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Newburgh, NY', '12550', 'W. Franklin St.', '620', 32);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Endicott, NY', '13760', 'Cemetery Drive', '8', 33);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Bronx, NY', '10468', 'Windfall Road', '539', 34);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Fresh Meadows, NY', '11365', 'Sulphur Springs St.', '636 SW.', 35);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'New York, NY', '10028', 'Lafayette Lane', '38', 36);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'New York, NY', '10029', 'St Paul Lane', '8384', 37);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Bronx, NY', '10452', 'Rock Creek Dr.', '908', 38);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Bronx, NY', '10463', 'Mayflower Dr.', '7088', 39);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Astoria, NY', '11106', 'Main St.', '9552', 40);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Brooklyn, NY', '11235', 'South Illinois St.', '752', 41);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Brooklyn, NY', '11210', 'Bridgeton Ave.', '18', 42);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Jamaica, NY', '11434', 'Acacia Rd.', '941', 43);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Corona, NY', 'Smith Store St.', '62', 'Suite 846', 44);
+
+INSERT INTO "EMPLOYEE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "EMPLOYEE_ID") values (
+'Buffalo, NY', '14224', 'Tanglewood Avenue', '79', 45);
