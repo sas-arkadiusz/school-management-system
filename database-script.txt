@@ -329,7 +329,8 @@ CREATE TABLE "FINAL_ASSESSMENT"(
  "POLISH" Bigint NOT NULL,
  "PHYSICS" Bigint NOT NULL,
  "IT" Bigint NOT NULL,
- "STUDENT_ID" Bigint NOT NULL
+ "YEAR" Bigint NOT NULL,
+ "STUDENT_ID" Bigint NOT NULL UNIQUE
 )
 WITH (
  autovacuum_enabled=true)
