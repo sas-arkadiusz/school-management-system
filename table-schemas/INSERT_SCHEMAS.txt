@@ -1,12 +1,27 @@
 TO 'STUDENT':
 
 INSERT INTO "STUDENT" ("STUDENT_ID", "SURNAME", "NAME", "DATE_OF_BIRTH", "FORM", "STIPEND") values [...]
---- STUDENT ID (PK) IS NOT NULL ---> BIGINT
+--- STUDENT_ID (PK) IS NOT NULL ---> BIGINT
 --- SURNAME IS NOT NULL ---> TEXT
 --- NAME IS NOT NULL ---> TEST
 --- DATE_OF_BIRTH IS NOT NULL ---> DATE
 --- FORM IS NOT NULL ---> TEXT
 --- STIPEND ---> BOOLEAN
+
+<-------------------------------------------------------------------------------------------------------->
+
+TO 'FINAL_ASSESSMENT':
+
+INSERT INTO "FINAL_ASSESSMENT" ("MATH", "CHEMISTRY", "HISTORY", "ENGLISH", "POLISH", "PHYSICS", "IT", "SCHOOL_YEAR", "STUDENT_ID") values [...]
+--- MATH DEFAULT 0 ---> BIGINT
+--- CHEMISTRY DEFAULT 0 ---> BIGINT
+--- HISTORY DEFAULT 0 ---> BIGINT
+--- ENGLISH DEFAULT 0 ---> BIGINT
+--- POLISH DEFAULT 0 ---> BIGINT
+--- PHYSICS DEFAULT 0 ---> BIGINT
+--- IT DEFAULT 0 ---> BIGINT
+--- SCHOOL_YEAR IS NOT NULL ---> TEXT
+--- STUDENT_ID (FK) IS NOT NULL ---> BIGINT
 
 <-------------------------------------------------------------------------------------------------------->
 
@@ -32,11 +47,140 @@ insert into "CHARGE" ("CHARGE_ID", "AMOUNT_WITHOUT_INTEREST", "INTEREST", "PAYME
 
 <-------------------------------------------------------------------------------------------------------->
 
+TO 'TEACHER':
+
+INSERT INTO "TEACHER" ("EMPLOYEE_ID", "TEACHER_ID", "SURNAME", "NAME", "DATE_OF_BIRTH", "SALARY", "CAREER_LADDER", "EMPLOYEE_SUPERVISOR_ID") values [...]
+--- EMPLOYEE_ID (PK) IS NOT NULL ---> BIGINT
+--- TEACHER_ID IS NOT NULL UNIQUE ---> BIGINT
+--- SURNAME IS NOT NULL ---> TEXT
+--- NAME IS NOT NULL ---> TEXT
+--- DATE_OF_BIRTH IS NOT NULL ---> DATE
+--- SALARY IS NOT NULL ---> BIGINT
+--- CAREER_LADDER IS NOT NULL ---> TEXT
+--- EMPLOYEE_SUPERVISOR_ID ---> BIGINT
+<-------------------------------------------------------------------------------------------------------->
+
+TO 'TEACHER_ADDRESS':
+
+INSERT INTO "TEACHER_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "TEACHER_ID") VALUES [...]
+--- LOCALITY IS NOT NULL ---> TEXT
+--- POSTCODE IS NOT NULL ---> TEXT
+--- STREET IS NOT NULL ---> TEXT
+--- NO IS NOT NULL ---> TEXT
+--- TEACHER_ID (FK) IS NOT NULL ---> BIGINT
+
+<-------------------------------------------------------------------------------------------------------->
+
+TO 'TRAINING_COMPLETED':
+
+INSERT INTO "TRAINING_COMPLETED" ("TRAINING_NAME", "TRAINING_DATE") values [...]
+--- TRAINING_NAME IS NOT NULL ---> TEXT
+--- TRAINING_DATE IS NOT NULL ---> DATE
+<-------------------------------------------------------------------------------------------------------->
+
+TO 'TEACHER_COMPLETED':
+
+INSERT INTO "TEACHER_COMPLETED" ("TRAINING_NAME", "EMPLOYEE_ID") values [...]
+--- TRAINING_NAME IS NOT NULL ---> TEXT
+--- EMPLOYEE_IDIS NOT NULL ---> BIGINT
+<-------------------------------------------------------------------------------------------------------->
+
+TO 'ADMINISTRATION':
+
+INSERT INTO "ADMINISTRATION" ("EMPLOYEE_ID", "ADMINISTRATION_ID", "SURNAME", "NAME", "DATE_OF_BIRTH", "SALARY", "POSITION") values [...]
+--- EMPLOYEE_ID (PK) IS NOT NULL ---> BIGINT
+--- ADMINISTRATION_ID IS NOT NULL UNIQUE ---> BIGINT
+--- SURNAME IS NOT NULL ---> TEXT
+--- NAME IS NOT NULL ---> TEXT
+--- DATE_OF_BIRTH IS NOT NULL ---> DATE
+--- SALARY IS NOT NULL ---> BIGINT
+--- POSITION IS NOT NULL ---> TEXT
+<-------------------------------------------------------------------------------------------------------->
+
+TO 'ADMINISTRATION_ADDRESS':
+
+INSERT INTO "ADMINISTRATION_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "ADMINISTRATION_ID") VALUES [...]
+--- LOCALITY IS NOT NULL ---> TEXT
+--- POSTCODE IS NOT NULL ---> TEXT
+--- STREET IS NOT NULL ---> TEXT
+--- NO IS NOT NULL ---> TEXT
+--- ADMINISTRATION_ID (FK) IS NOT NULL ---> BIGINT
+
+<-------------------------------------------------------------------------------------------------------->
+
+TO 'MAINTENANCE':
+
+INSERT INTO "MAINTENANCE" ("EMPLOYEE_ID", "MAINTENANCE_ID", "SURNAME", "NAME", "DATE_OF_BIRTH", "SALARY", "POSITION") values [...]
+--- EMPLOYEE_ID (PK) IS NOT NULL ---> BIGINT
+--- MAINTENANCE_ID IS NOT NULL UNIQUE ---> BIGINT
+--- SURNAME IS NOT NULL ---> TEXT
+--- NAME IS NOT NULL ---> TEXT
+--- DATE_OF_BIRTH IS NOT NULL ---> DATE
+--- SALARY IS NOT NULL ---> BIGINT
+--- POSITION IS NOT NULL ---> TEXT
+<-------------------------------------------------------------------------------------------------------->
+
+TO 'MAINTENANCE_ADDRESS':
+
+INSERT INTO "MAINTENANCE_ADDRESS" ("LOCALITY", "POSTCODE", "STREET", "NO", "MAINTENANCE_ID") VALUES [...]
+--- LOCALITY IS NOT NULL ---> TEXT
+--- POSTCODE IS NOT NULL ---> TEXT
+--- STREET IS NOT NULL ---> TEXT
+--- NO IS NOT NULL ---> TEXT
+--- MAINTENANCE_ID (FK) IS NOT NULL ---> BIGINT
+
+<-------------------------------------------------------------------------------------------------------->
+
 TO 'CLASSROOM':
 
 INSERT INTO "CLASSROOM" ("CLASSROOM_ID", "COMPLEX") values [...]
 --- CLASSROOM (PK) IS NOT NULL ---> BIGINT
 --- COMPLEX IS NOT NULL ---> BIGINT
+
+<-------------------------------------------------------------------------------------------------------->
+
+TO 'SUBJECT':
+
+INSERT INTO "CLASSROOM" ("SUBJECT_ID", "SUBJECT_NAME", "SCHOOL_YEAR", "CLASSROOM_ID", "EMPLOYEE_ID") values [...]
+--- SUBJECT_ID (PK) IS NOT NULL ---> BIGINT
+--- SUBJECT_NAME IS NOT NULL ---> TEXT
+--- SCHOOL_YEAR IS NOT NULL ---> TEXT
+--- CLASSROOM_ID (FK) IS NOT NULL ---> BIGINT
+--- EMPLOYEE_ID (FK) IS NOT NULL ---> BIGINT
+
+<-------------------------------------------------------------------------------------------------------->
+
+TO 'STUDENT_SUBJECT':
+
+INSERT INTO "STUDENT_CLASSROOM" ("STUDENT_ID", "SUBJECT_ID") values [...]
+--- STUDENT_ID (FK) ---> BIGINT
+--- SUBJECT_ID (FK) IS NOT NULL ---> BIGINT
+
+<-------------------------------------------------------------------------------------------------------->
+
+TO 'SPECIAL_INTERESTS_GROUP':
+
+INSERT INTO "SPECIAL_INTERESTS_GROUP" ("SIG_ID", "SUBJECT_AREA", "CLASSROOM_ID") values [...]
+--- SIG_ID (PK) IS NOT NULL ---> BIGINT
+--- SUBJECT_AREA IS NOT NULL ---> TEXT
+--- CLASSROOM_ID (FK) IS NOT NULL ---> BIGINT
+
+<-------------------------------------------------------------------------------------------------------->
+
+TO 'TEACHER_SIG':
+
+INSERT INTO "TEACHER_SIG" ("BUDGET", "SIG_ID", "EMPLOYEE_ID") values [...]
+--- BUDGET IS NOT NULL ---> BIGINT
+--- SIG_ID (FK) ---> BIGINT
+--- EMPLOYEE_ID (FK) IS NOT NULL ---> BIGINT
+
+<-------------------------------------------------------------------------------------------------------->
+
+TO 'STUDENT_SIG':
+
+INSERT INTO "STUDENT_SIG" ("STUDENT_ID", "SIG_ID") values [...]
+--- STUDENT_ID (FK) ---> BIGINT
+--- SIG_ID (FK) ---> BIGINT
 
 <-------------------------------------------------------------------------------------------------------->
 
