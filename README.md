@@ -1,11 +1,11 @@
 # School Management System
 
 ## Table of contents
-* [General Info](#image-processing---general-info)
+* [General Info](#school-management-system---general-info)
 * [Technologies](#technologies)
 * [Documentation](#documentation)
 
-## Image Processing - General Info
+## School Management System - General Info
 This repository contains school database.
 
 ## Technologies
