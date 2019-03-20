@@ -3,21 +3,19 @@
 ## Table of contents
 * [General Info](#image-processing---general-info)
 * [Technologies](#technologies)
-* [Setup](#setup)
+* [Documentation](#documentation)
 
 ## Image Processing - General Info
-This repository contains school database and an application to manage the database.
+This repository contains school database.
 
 ## Technologies
 This project is created with:
-* Java SE 8
 * PostgreSQL 10
-* JDBC 4.2
 
 Diagrams are created in:
 * UML Notation
 * Chen's Notation
 * Barker's Notation
 
-## Setup
-Work in progress.
+## Documentation
+So far project documentation is available only in Polish. Work in progress.
