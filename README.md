@@ -18,4 +18,4 @@ Diagrams are created in:
 * Barker's Notation
 
 ## Documentation
-So far project documentation is available only in Polish. Work in progress.
+So far project documentation (project-documentation.pdf) is available only in Polish. Work in progress.
