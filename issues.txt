@@ -1,8 +1,0 @@
-1. Poprawiæ relacjê na diagram STUDENT-FINAL na 1 - 1.
-2. Wgraæ now¹ wersjê skryptu, gdzie mo¿na dodaæ do STUDENT_SUBJECT:
-insert into "STUDENT_SUBJECT" ("SUBJECT_ID") values (16); 
-
-
-
-
-Ponownie wkleiæ tablice: STUDENT_SUBJECT, 
